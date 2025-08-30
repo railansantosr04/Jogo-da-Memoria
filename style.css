@@ -1,0 +1,61 @@
+body {
+    background: url("FUNDO DO JOGO.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial Black, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 80px;
+    height: 100px;
+    background-color: #444;
+    color: transparent;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carta.virada {
+    background-color: #fff;
+    color: #000;
+}
+
+.carta.encontrada {
+    background-color: #4caf50;
+    color: #fff;
+    pointer-events: none;
+}
+
+
+.carta.nao-combinou {
+    background-color: #f44336;
+    color: #fff;
+}
